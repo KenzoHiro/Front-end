@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-right">
+            <a href="gestor_ambiental.html">
+                <img src="imagens/EcoGestor.png" height="76px" alt="EcoGestor"></a>
+            <nav>
+                <ul>
+                    <li><a href="atividades.html">Atividades</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre a gestão ambiental</h2>
+            <p>A Gestão Ambiental é uma atividade essencial e estratégica que visa a conservação, preservação e melhoria
+                do meio ambiente, de forma a garantir a sustentabilidade dos recursos naturais e o equilíbrio
+                ecossistêmico.
+                É uma disciplina interdisciplinar que envolve aspectos técnicos, científicos, legais e socioeconômicos,
+                com o objetivo de promover a harmonia entre o desenvolvimento humano e a proteção ambiental.</p>
+            <p>A atividade de gestão ambiental requer uma abordagem abrangente, considerando todas as dimensões do
+                ambiente, desde o ar e a água até a biodiversidade e os ecossistemas. Envolve a identificação e
+                avaliação dos impactos ambientais decorrentes das atividades humanas, bem como a implementação de
+                estratégias e medidas para mitigar esses impactos e promover a sustentabilidade.</p>
+            <p>Um dos principais pilares da gestão ambiental é a adoção de práticas de conservação e uso sustentável dos
+                recursos naturais. Isso inclui a implementação de técnicas de manejo adequado do solo, da água e da
+                vegetação, a fim de evitar a degradação ambiental e promover a regeneração dos ecossistemas. Além disso,
+                a gestão ambiental também envolve a promoção da eficiência energética, a redução da geração de resíduos
+                e a adoção de práticas de reciclagem e reutilização.</p>
+            <p>Outro aspecto fundamental da gestão ambiental é a educação e conscientização ambiental. É importante
+                envolver a sociedade e os diferentes setores da economia na busca por soluções sustentáveis, por meio da
+                divulgação de informações e da promoção de programas de educação ambiental. Isso contribui para a
+                formação de uma consciência coletiva sobre a importância da preservação ambiental e incentiva a adoção
+                de comportamentos responsáveis em relação ao meio ambiente.</p>
+            <p>A gestão ambiental também está intrinsecamente ligada às políticas públicas e à legislação ambiental.
+                Governos e organizações internacionais têm um papel fundamental na definição de diretrizes, normas e
+                regulamentos que visam proteger o meio ambiente e promover o desenvolvimento sustentável. A
+                implementação e fiscalização dessas políticas são essenciais para garantir que as atividades humanas
+                estejam alinhadas com os princípios da sustentabilidade.</p>
+            <p>Além disso, a gestão ambiental envolve a participação ativa de empresas e organizações, que devem adotar
+                práticas de responsabilidade socioambiental em suas operações. Isso implica em considerar os impactos
+                ambientais em suas decisões estratégicas, implementar sistemas de gestão ambiental, buscar a
+                certificação ambiental e promover a transparência e a prestação de contas em relação ao desempenho
+                ambiental.</p>
+        </div>
+    </section>
+
+    <button id="btn-topo" onclick="voltarAoTopo()">Voltar ao topo</button>
+
+    <script>
+        function voltarAoTopo() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        window.onscroll = function () {
+            mostrarOcultarBotao();
+        };
+
+        function mostrarOcultarBotao() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("btn-topo").style.display = "block";
+            } else {
+                document.getElementById("btn-topo").style.display = "none";
+            }
+        }
+    </script>
+
+    <footer>
+        <div class="container">
+            <p>
+                <center>&copy; 2023 EcoGestor. Todos os direitos reservados.</center>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

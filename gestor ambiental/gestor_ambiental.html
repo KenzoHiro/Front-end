@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia do Gestor Ambiental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-right">
+            <a href="gestor_ambiental.html">
+                <img src="imagens/EcoGestor.png" height="76px" alt="EcoGestor"></a>
+            <nav>
+                <ul>
+                    <li><a href="atividades.html">Atividades</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <h2>17 de Junho, Dia do Gestor Ambiental</h2>
+            <p>O Dia do Gestor Ambiental é uma data especial dedicada a celebrar e reconhecer o importante trabalho dos
+                profissionais que atuam na gestão e preservação do meio ambiente. Neste dia, destacamos a relevância do
+                papel
+                desempenhado pelos gestores ambientais na promoção da sustentabilidade e na busca por soluções que
+                conciliem o
+                desenvolvimento humano com a conservação dos recursos naturais.</p>
+            <p>Esses profissionais desempenham um papel fundamental na implementação de políticas e práticas voltadas
+                para a
+                proteção do meio ambiente, garantindo a utilização responsável dos recursos naturais, a preservação da
+                biodiversidade, a mitigação e adaptação às mudanças climáticas, além de promover a conscientização e
+                educação
+                ambiental.</p>
+            <p>No Dia do Gestor Ambiental, celebramos as conquistas alcançadas e também refletimos sobre os desafios que
+                ainda
+                estão por vir. É um momento para reconhecermos a importância da sustentabilidade em todas as esferas da
+                sociedade e incentivar ações individuais e coletivas que contribuam para um futuro mais equilibrado e
+                harmonioso
+                com o meio ambiente.</p>
+            <p>Junte-se a nós nessa celebração e faça parte dessa causa em prol de um planeta mais saudável e
+                sustentável para
+                as futuras gerações!</p>
+        </div>
+    </section>
+
+    <section id="colaboradores">
+        <div class="container">
+            <div class="logos">
+                <img src="imagens/1200px-Logo_IBAMA.svg-removebg-preview.png" alt="Ibama">
+                <img src="imagens/2023_br_govfederal_marcaoficial_rgb-removebg-preview.png" alt="Gov">
+                <img src="imagens/ANAGEApq-removebg-preview.png" alt="Anagea">
+                <img src="imagens/41517287_1949405008462069_1302937135933816832_n.png" alt="UCB">
+            </div>
+        </div>
+    </section>
+
+    <button id="btn-topo" onclick="voltarAoTopo()">Voltar ao topo</button>
+
+    <script>
+        function voltarAoTopo() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        window.onscroll = function () {
+            mostrarOcultarBotao();
+        };
+
+        function mostrarOcultarBotao() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("btn-topo").style.display = "block";
+            } else {
+                document.getElementById("btn-topo").style.display = "none";
+            }
+        }
+    </script>
+
+    <footer>
+        <div class="container">
+            <p>
+                <center>&copy; 2023 EcoGestor. Todos os direitos reservados.</center>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
